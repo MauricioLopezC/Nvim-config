@@ -35,9 +35,17 @@ return require('packer').startup(function(use)
   use "L3MON4D3/LuaSnip"
   use "saadparwaiz1/cmp_luasnip"
   use "hrsh7th/cmp-nvim-lsp"
+  use "rafamadriz/friendly-snippets"
 
   --syntax highlight tree sitter
   use 'nvim-treesitter/nvim-treesitter'
+
+  -- telescope for fuzzy finder
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+     -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
 
 

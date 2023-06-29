@@ -6,6 +6,10 @@ number = true,
 encoding = 'utf-8',
 splitright = true,
 splitbelow = true,
+autoindent = true,
+tabstop = 4,
+shiftwidth = 4,
+cursorline = true,
 }
 
 for k, v in pairs(options) do

@@ -1,4 +1,5 @@
 local cmp = require('cmp')
+require("luasnip.loaders.from_vscode").lazy_load()
 cmp.setup({
     snippet = {
       -- REQUIRED - you must specify a snippet engine
@@ -31,4 +32,4 @@ cmp.setup({
     })
   })
 
-
+-- snippets

@@ -1,6 +1,6 @@
 require('mason').setup()
 require('mason-lspconfig').setup({
-	ensure_installed = {"lua_ls", "jedi_language_server", "pyright", "tsserver"}
+	ensure_installed = {"lua_ls", "jedi_language_server", "pyright", "tsserver", "emmet_ls"}
 })
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -15,6 +15,9 @@ require("lspconfig").pyright.setup {
 	capabilities = capabilities,
 }
 require("lspconfig").tsserver.setup {
+	capabilities = capabilities,
+}
+require("lspconfig").emmet_ls.setup {
 	capabilities = capabilities,
 }
 
