@@ -37,6 +37,8 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "rafamadriz/friendly-snippets"
 
+
+
   --syntax highlight tree sitter
   use 'nvim-treesitter/nvim-treesitter'
 
