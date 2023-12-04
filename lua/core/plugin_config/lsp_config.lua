@@ -20,6 +20,9 @@ require("lspconfig").tsserver.setup {
 require("lspconfig").emmet_ls.setup {
 	capabilities = capabilities,
 }
+require("lspconfig").html.setup {
+  capabilities = capabilities,
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
