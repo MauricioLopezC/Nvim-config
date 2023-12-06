@@ -37,6 +37,8 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "rafamadriz/friendly-snippets"
 
+  use 'onsails/lspkind.nvim' --fancy icons in cmp completation menu
+
 
 
   --syntax highlight tree sitter
