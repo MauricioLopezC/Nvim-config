@@ -1,6 +1,6 @@
 require('mason').setup()
 require('mason-lspconfig').setup({
-	ensure_installed = {"lua_ls", "jedi_language_server", "pyright", "tsserver", "emmet_ls", "tailwindcss"}
+	ensure_installed = {"lua_ls", "jedi_language_server", "pyright", "tsserver", "emmet_ls", "tailwindcss", "clangd"}
 })
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -25,6 +25,9 @@ require("lspconfig").html.setup {
 }
 require("lspconfig").tailwindcss.setup {
   capabilities = capabilities,
+}
+require("lspconfig").clangd.setup {
+  capabilities = capabilities
 }
 
 -- Global mappings.
